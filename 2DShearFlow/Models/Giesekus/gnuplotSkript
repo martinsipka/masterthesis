@@ -1,0 +1,9 @@
+
+set xlabel "t [s]"
+set ylabel "T_{12}"
+set yrange [0:4.5]
+
+plot "sheerStress" notitle with lines
+
+
+

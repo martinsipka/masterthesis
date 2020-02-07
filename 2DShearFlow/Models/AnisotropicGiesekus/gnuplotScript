@@ -1,0 +1,8 @@
+set termoption enhanced
+
+set key at graph 0.9, 0.5
+set xlabel "t [s]"
+set ylabel "T_{12} [Pa]"
+set yrange [2:3]
+
+plot "sheerStress" with lines notitle lt rgb "red"
