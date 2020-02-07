@@ -115,8 +115,8 @@ def c(np, npt, Bp, u):
 
 
 
-#theta = Constant(0.5) # Euler scheme 
-theta = Constant(1)  # Crank-Nicolson scheme
+#theta = Constant(0.5)  # Crank-Nicolson scheme 
+theta = Constant(1)  # Implicit Euler scheme 
 
 
 F = Constant(1.0/dt)*inner(u-u0, v)*dx + theta*a(u, v, p, q, Bp, np) + (1.0-theta)*a(u0, v, p0, q, Bp0, np0) \
